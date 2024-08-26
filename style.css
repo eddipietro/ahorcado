@@ -263,7 +263,7 @@ h1 {
         justify-content: center; /* Centra verticalmente */
         align-items: center; /* Centra horizontalmente */
         margin: 0; /* Elimina el margen para centrar el contenido */
-        height: 130vh; /* Ocupa toda la altura de la vista */
+        height: 150vh; /* Ocupa toda la altura de la vista */
         text-align: center; /* Alinea el texto al centro */
     }
 
