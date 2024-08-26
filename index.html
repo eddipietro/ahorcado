@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+
+    <!-- Contenedor para las estrellas -->
+    <div class="stars-container"></div>
+    
+    <div class="presentacion">
+        <h1>Juego del Ahorcado</h1>
+        <p class="subtitulo">¿Te animas a empezar?</p>
+        <button type="button" class="neon-button" onclick="document.getElementById('comencemos').scrollIntoView({ behavior: 'smooth' });">Comencemos</button>
+    </div>
+    
+    <div class="descripcion" id="comencemos">
+        <h2>OBJETIVO: Adivinar una palabra en el menor número de intentos posibles.</h2>
+        <p>Debes ir escribiendo letras,
+            <p class="acierto">Si aciertas se escribe la letra en la raya que corresponda. <img class="iconos-descripcion" src="https://i.postimg.cc/FzKfD7Wc/cheque.png" alt="check"></p>
+            <p class="error">Si fallas se dibuja una parte del muñeco (cabeza, piernas, brazo…). <img class="iconos-descripcion" src="https://i.postimg.cc/q7n23hSv/cruz.png" alt="error"></p>
+            Hay que conseguir adivinar la palabra antes que se complete el cuerpo.
+            ¡O TERMINARÁS AHORCADO!
+        </p>
+    </div>
+    
+    <div class="button-start">
+        <button type="button" class="btn btn-primary" id="start">EMPEZAR</button>
+    </div>
+
+    <!-- DESARROLLO DEL JUEGO -->
+    <div class="juego">
+        <h3 id="letra">Palabra: _______</h3>
+        <img id="imagen-ahorcado" src="./assets/0.jpg" alt="Ahorcado" style="width: 200px; height: auto;">
+        <p id="letras-ingresadas">Letras ingresadas: </p>
+        <p id="intentos">Intentos restantes: 5</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
