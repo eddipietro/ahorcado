@@ -145,6 +145,7 @@ body, html {
 
 /* Efecto de neón parpadeante para el h1 */
 h1 {
+    display: flex;
     font-size: 50px;
     color: #fee; /* Color del texto del h1 */
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em rgb(138, 43, 226), 0 0 0.5em rgb(138, 43, 226), 0 0 0.1em rgb(138, 43, 226), 0 10px 3px #000; /* Efecto neón */
@@ -249,4 +250,38 @@ h1 {
     margin-top: 5%;
     color: aliceblue;
     z-index: 10; /* Asegura que el contenido esté sobre las estrellas */
+}
+
+
+/* MEDIDAS RESPONSIVE  SMARTPHONE */
+
+@media (min-width: 380px) and (max-width: 768px) {
+/* presentacion */
+    .presentacion {
+        display: flex; /* Activa Flexbox */
+        flex-direction: column; /* Orienta el contenido en columna */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        margin: 0; /* Elimina el margen para centrar el contenido */
+        height: 70vh; /* Ocupa toda la altura de la vista */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 0; /* Elimina el margen para centrar el título */
+    }
+    
+    .subtitulo {
+        font-size: 15px;
+        margin-top: 10px; /* Ajusta el margen superior si es necesario */
+    }
+
+    /* descripcion  */
+    .descripcion{
+        margin: 15%;
+    }
+    h2{
+
+    }
 }
